@@ -61,7 +61,6 @@ button.addEventListener('click', () => {
     let text = textInput.value
     for(let i = 0; i < text.length; i++){
         inputLetterArray.push(text.charAt(i).toUpperCase())
-        console.log(letterArray.indexOf(inputLetterArray[i]))
         morseCode.push(morseAlphabet[letterArray.indexOf(inputLetterArray[i])].morseCode)
     }
     textOutput.innerHTML = inputLetterArray.join("|")
