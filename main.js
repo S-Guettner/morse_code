@@ -2,6 +2,7 @@ const textInput = document.querySelector("#textInput")
 const button = document.querySelector("#button")
 const morseCodeOutput = document.querySelector("#morseCodeOutput")
 const textOutput = document.querySelector("#textOutput")
+const newInput = document.querySelector(".newInput")
 
 let morseAlphabet = [
     { letter: "1", morseCode: ".----" },
@@ -57,10 +58,13 @@ morseAlphabet.forEach((item) =>{
 
 button.addEventListener('click', () => {
     let text = textInput.value
+    button.style.display="none"
     for(let i = 0; i < text.length; i++){
         inputLetterArray.push(text.charAt(i).toUpperCase())
         morseCode.push(morseAlphabet[letterArray.indexOf(inputLetterArray[i])].morseCode)
     }
     textOutput.innerHTML = inputLetterArray.join("|")
     morseCodeOutput.innerHTML = morseCode.join("|")
+    newInput.style.display="block"
 })
+

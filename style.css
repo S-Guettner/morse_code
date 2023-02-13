@@ -27,3 +27,22 @@ section{
 .outputdiv p{
     text-align: center;
 }
+.buttonContainerReset{
+    display: flex;
+    justify-content: center;
+}
+.newInput{
+    border-radius: 15px;
+    border: 1px solid;
+    display: flex;
+    display: none;
+    cursor: pointer;
+    padding: .5rem;
+}
+.newInput:hover{
+    color: white;
+    background-color: gray;
+}
+.buttonContainerReset{
+    padding-top: 1rem;
+}
