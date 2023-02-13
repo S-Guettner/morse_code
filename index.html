@@ -9,11 +9,17 @@
     <script src="./main.js" defer></script>
 </head>
 <body>
-    <form onsubmit="return false">
-        <input type="text" name="textInput" id="textInput">
-        <input id="button" type="button" value="Encrypt">
-    </form>
-    <p id="textOutput"></p>
+    <section>
+        <form onsubmit="return false">
+            <input type="text" name="textInput" id="textInput">
+            <div class="buttonContainer">
+                <input id="button" type="button" value="Encrypt">
+            </div>
+        </form>
+    </section>
+    <div class="outputdiv">
+        <p id="textOutput"></p>
         <p id="morseCodeOutput"></p>
+    </div>
 </body>
 </html>

@@ -1,0 +1,29 @@
+section{
+    display: flex;
+    justify-content: center;
+}
+#textInput{
+    display: block;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: 15px;
+    border: 1px solid;
+}
+#button{
+    padding: .5rem;
+    width: 5rem;
+    border-radius: 15px;
+    border: 1px solid;
+}
+#button:hover{
+    color: white;
+    background-color: gray;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.outputdiv p{
+    text-align: center;
+}
