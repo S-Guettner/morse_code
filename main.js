@@ -56,8 +56,6 @@ morseAlphabet.forEach((item) =>{
     console.log(item.letter)
     morseCodeArray.push(item.morseCode)
 })
-console.log(letterArray)
-console.log(morseCodeArray)
 
 button.addEventListener('click', () => {
     let text = textInput.value
@@ -68,6 +66,4 @@ button.addEventListener('click', () => {
     }
     textOutput.innerHTML = inputLetterArray.join("|")
     morseCodeOutput.innerHTML = morseCode.join("|")
-    console.log(morseCode)
-    console.log(inputLetterArray)
 })
