@@ -49,11 +49,9 @@ const inputLetterArray = []
 const morseCode = []
 
 morseAlphabet.forEach((item) =>{
-    console.log(item.letter)
     letterArray.push(item.letter)
 })
 morseAlphabet.forEach((item) =>{
-    console.log(item.letter)
     morseCodeArray.push(item.morseCode)
 })
 
